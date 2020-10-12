@@ -1,11 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import PolynomialFeatures
-from lmfit.models import LorentzianModel
+
 
 
 data = pd.read_csv('Cases_data.csv').iloc[::-1].fillna(value=0)
